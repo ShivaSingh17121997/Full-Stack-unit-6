@@ -1,20 +1,17 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import SignupPage from './Components/SignupPage'
-import PostPage from './Components/PostPage'
-import LoginPage from './Components/LoginPage'
+import { Route, Routes } from 'react-router-dom'
+import { LoginPage } from './component/LoginPage'
+import { SignupPage } from './component/SignupPage'
+import { PostPage } from './component/PostPage'
 
-export default function AllRoutes() {
-    return (
-        <div>
-            <Routes>
-                <Route path="/login" elemet={<LoginPage />} ></Route>
-                <Route path="/register" elemet={<SignupPage />} ></Route>
-                <Route path="/post" elemet={<PostPage />} ></Route>
-
-            </Routes>
-
-
-        </div>
-    )
+export const AllRoutes = () => {
+  return (
+    <div>
+<Routes>
+ <Route path="/login" element={<LoginPage />}></Route>
+<Route path="/register" element={<SignupPage />}></Route>
+<Route path="/post" element={<PostPage />}></Route>
+</Routes>
+    </div>
+  )
 }
