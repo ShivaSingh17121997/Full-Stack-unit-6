@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { LoginPage } from './component/LoginPage'
-import { SignupPage } from './component/SignupPage'
-import { PostPage } from './component/PostPage'
+import { LoginPage } from './Components/LoginPage'
+import { SignupPage } from './Components/SignupPage'
+import { PostPage } from './Components/PostPage'
 
 export const AllRoutes = () => {
   return (
